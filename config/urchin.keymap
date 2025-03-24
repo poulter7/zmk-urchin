@@ -98,10 +98,10 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp Q &kp W &kp F &kp P &kp B		&kp J &kp L  &kp U     &kp Y   &kp SQT       
-			&kp A &kp R &hm LCTRL S  &hm LEFT_GUI T  &kp G		 &kp M &hm LEFT_GUI N  &hm LCTRL E  &kp I    &kp O         
-			&kp Z &kp X &kp C &kp D &kp V           &kp K &kp H  &kp COMMA    &kp DOT  &kp QUESTION
-			&kp ESCAPE  &mt LEFT_SHIFT SPACE  &lt EXT RET  &lt SYM BACKSPACE 
+			&kp Q &kp W &kp F        &kp P          &kp B	&kp J &kp L           &kp U        &kp Y   &kp SQT       
+			&kp A &kp R &hm LCTRL S  &hm LEFT_GUI T &kp G	&kp M &hm LEFT_GUI N  &hm LCTRL E  &kp I   &kp O         
+			&kp Z &kp X &kp C        &kp D          &kp V   &kp K &kp H           &kp COMMA    &kp DOT &kp QUESTION
+				&kp ESCAPE  &mt LEFT_SHIFT SPACE  &lt EXT RET  &lt SYM BACKSPACE 
 			>;
 		};
 
@@ -109,10 +109,10 @@
 		sym_layer {
 			label = "Sym.";
 			bindings = <
-			&none  &kp N7 &kp N8 &kp N9 &none &none     &kp LS(TAB)  &kp TAB       &none &none
-			&none	    &kp N4     &hm LCTRL N5  &hm LGUI N6  &none        &kp LEFT   &kp DOWN    &kp UP_ARROW &kp RIGHT    &none
-			&none	     &kp N1      &kp N2        &kp N3      &none        &none     &none       &none        &none       &none  
-														&kp DOT  &kp N0  &trans  &trans                   
+			&none &kp N7 &kp N8       &kp N9      &none &none    &kp LS(TAB) &kp TAB      &none     &none
+			&none &kp N4 &hm LCTRL N5 &hm LGUI N6 &none &kp LEFT &kp DOWN    &kp UP_ARROW &kp RIGHT &none
+			&none &kp N1 &kp N2       &kp N3      &none &none    &none       &none        &none     &none  
+							&kp DOT  &kp N0  &trans  &trans                   
 
 			>;
 		};
@@ -121,10 +121,10 @@
 		ext_layer {
 			label = "Mods";
 			bindings = <
-			&kp ESC  &kp C_PREV &kp C_PP  &kp C_NEXT  &kp C_PAUSE    	&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
-			&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
-			&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
-																		&trans &kp LCTRL    &kp ENTER  &mo FNC 
+			&kp EXCL       &kp AT          &kp LS(POUND)     &kp LS(DOLLAR)        &kp LS(PERCENT)         &kp CARET     &kp AMPS               &kp LS(ASTRK)      &none            &kp DQT           
+			&kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp SEMI                &kp COLON     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  
+			&none          &kp GRAVE       &kp TILDE         &kp UNDER             &kp MINUS               &kp RS(PLUS)  &kp EQUAL              &kp BACKSLASH      &kp PIPE         &kp SLASH         
+												&trans  &trans  &none    &none  
 			>;
 		};
 
