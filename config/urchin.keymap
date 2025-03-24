@@ -28,6 +28,15 @@
 
 / {
 	behaviors {
+		hm: homerow_mods {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "HOMEROW_MODS";
+		    #binding-cells = <2>;
+		    tapping-term-ms = <200>;
+		    quick_tap_ms = <175>;
+		    flavor = "tap-preferred";
+		    bindings = <&kp>, <&kp>;
+		};
 		// Enables holding the first mod-tap key
 		// by performing a tap-release-hold sequence.
 		// To use it: "&qt KEYCODE1 KEYCODE2"
@@ -92,7 +101,7 @@
 			&kp Q &kp W &kp F &kp P &kp B		&kp J &kp L  &kp U     &kp Y   &kp SQT       
 			&kp A &kp R &hm LCTRL S  &hm LEFT_GUI T  &kp G		 &kp M &hm LEFT_GUI N  &hm LCTRL E  &kp I    &kp O         
 			&kp Z &kp X &kp C &kp D &kp V           &kp K &kp H  &kp COMMA    &kp DOT  &kp QUESTION
-			&kp ESCAPE  &mt LEFT_SHIFT SPACE  &lt 4 RET  &lt 6 BACKSPACE 
+			&kp ESCAPE  &mt LEFT_SHIFT SPACE  &lt EXT RET  &lt SYM BACKSPACE 
 			>;
 		};
 
@@ -100,10 +109,11 @@
 		sym_layer {
 			label = "Sym.";
 			bindings = <
-			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp IT_LESS &kp IT_USD &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
-			&kp IT_GREAT &kp IT_PERC &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
-														&mo FNC  &mo SYM2       &trans &trans
+			&none  &kp N7 &kp N8 &kp N9 &none &none     &kp LS(TAB)  &kp TAB       &none &none
+			&none	    &kp N4     &hm LCTRL N5  &hm LGUI N6  &none        &kp LEFT   &kp DOWN    &kp UP_ARROW &kp RIGHT    &none
+			&none	     &kp N1      &kp N2        &kp N3      &none        &none     &none       &none        &none       &none  
+														&kp DOT  &kp N0  &trans  &trans                   
+
 			>;
 		};
 
